@@ -4,6 +4,18 @@ public class DeluxePizza extends Pizza {
 
     public DeluxePizza(Boolean isVeg) {
         super(isVeg);
-        // your code goes here
+        super.addExtraCheese();
+        super.addExtraToppings();
+    }
+
+    // prevent further additions
+    @Override
+    public void addExtraCheese() {
+        // already added in constructor
+    }
+
+    @Override
+    public void addExtraToppings() {
+        // already added in constructor
     }
 }
